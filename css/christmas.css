@@ -1,0 +1,552 @@
+html, body {
+  font-family: "Architects Daughter";
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  margin: 0 auto; 
+  padding: 0;  
+}
+
+body {
+  color: #FFF;
+  background-color: #000;
+}
+
+h1  {
+  font-size: 4vw;
+  line-height: 4.5vw;  
+}
+
+.text-center {
+  text-align: center;
+}
+
+.unstyled {
+  list-style-type: none; 
+}
+
+.red {
+  color: #FF1122;
+}
+
+.green {
+  color: #11AA55;
+}
+
+/* ------ Sky with stars-------*/
+
+.animated-sky-bg {
+  margin: 0;
+  position: relative;
+  background: #001428;
+  -webkit-animation: bg-color-sky-changing 5s infinite 1s;
+     -moz-animation: bg-color-sky-changing 5s infinite 1s;
+       -o-animation: bg-color-sky-changing 5s infinite 1s;
+          animation: bg-color-sky-changing 5s infinite 1s; 
+}
+
+@keyframes bg-color-sky-changing {
+  0% {
+    background: #001428; }
+  25% {
+    background: #001933; }
+  50% {
+    background: #001428; }
+  75% {
+    background: #000; }
+  100% {
+    background: #001933; } 
+}
+
+/* Chrome */
+@-webkit-keyframes bg-color-sky-changing {
+  0% {
+    background: #001428; }
+  25% {
+    background: #001933; }
+  50% {
+    background: #001428; }
+  75% {
+    background: #000; }
+  100% {
+    background: #001933; } 
+}
+
+/* Safari */
+@-moz-keyframes bg-color-sky-changing {
+  0% {
+    background: #001428; }
+  25% {
+    background: #001933; }
+  50% {
+    background: #001428; }
+  75% {
+    background: #000; }
+  100% {
+    background: #001933; } 
+}
+
+/* Opera */
+@-o-keyframes bg-color-sky-changing {
+  0% {
+    background: #001428; }
+  25% {
+    background: #001933; }
+  50% {
+    background: #001428; }
+  75% {
+    background: #000; }
+  100% {
+    background: #001933; } 
+}
+
+.sky {
+  margin:0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 70vw;
+}
+
+.sky-with-stars {
+  background-color: transparent;
+  background-image:
+    radial-gradient(#FFF, rgba(255,255,255,0.2) 0.2vw, transparent 4vw),
+    radial-gradient(#FFF, rgba(255,255,255,0.15) 0.1vw, transparent 3vw),
+    radial-gradient(#FFF, rgba(255,255,255,0.1) 0.2vw, transparent 4vw),
+    radial-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1) 0.2vw, transparent 3vw);
+  background-size: 55vw 55vw, 35vw 35vw, 25vw 25vw, 15vw 15vw; 
+  background-position: 0 0, 4vw 6vw, 13vw 27vw, 7vw 10vw; 
+}
+
+/* ------ White mountain -------*/
+.mountain {
+  width: 100vw;
+  height: 47vw;
+  position: relative;  
+  z-index: -1;
+}
+
+.white-mountain {
+  position: absolute;
+  background: #f8f8ff;
+  -webkit-animation: bg-color-mountain-changing 5s infinite 1s;
+     -moz-animation: bg-color-mountain-changing 5s infinite 1s;
+       -o-animation: bg-color-mountain-changing 5s infinite 1s;
+          animation: bg-color-mountain-changing 5s infinite 1s;  
+  z-index: 0;
+  top: 47vw;
+  left: 0;
+  -webkit-border-radius: 100vw 100vw 0 0;
+    -moz-border-radius: 100vw 100vw 0 0;  
+        border-radius: 100vw 100vw 0 0;  
+}
+
+@keyframes bg-color-mountain-changing {
+  0% {
+    background: #fffafa; }
+  33.33% {
+    background: #f8f8ff; }
+  66.66% {
+    background: #eee9e9; }
+  100% {
+    background: #cdc9c9; } 
+}
+
+/* Chrome */
+@-webkit-keyframes bg-color-mountain-changing {
+  0% {
+    background: #fffafa; }
+  33.33% {
+    background: #f8f8ff; }
+  66.66% {
+    background: #eee9e9; }
+  100% {
+    background: #cdc9c9; } 
+}
+
+/* Safari */
+@-moz-keyframes bg-color-mountain-changing {
+  0% {
+    background: #fffafa; }
+  33.33% {
+    background: #f8f8ff; }
+  66.66% {
+    background: #eee9e9; }
+  100% {
+    background: #cdc9c9; } 
+}
+
+/* Opera */
+@-o-keyframes bg-color-mountain-changing {
+  0% {
+    background: #fffafa; }
+  33.33% {
+    background: #f8f8ff; }
+  66.66% {
+    background: #eee9e9; }
+  100% {
+    background: #cdc9c9; } 
+}
+
+/* ------ Lake-------*/
+.lake {
+  width: 100vw;
+  height: 100vw;
+  position: relative;  
+  z-index: -1;
+}
+
+.dark-blue-lake {
+  position: absolute;
+  background: #001428; 
+  z-index: 0;
+  top: 64vw;
+  left: 0;
+}
+
+
+/* ------ Christmas-tree-------*/
+.christmas-tree {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  z-index: 0;
+  width: 50vw;
+  height: 50vw;    
+}
+
+.christmas-tree .triangle {
+  width: 0;
+  height: 0;
+  border-left: 6vw solid transparent;
+  border-right: 6vw solid transparent;
+  border-bottom: 8vw solid #11DD55;
+  position: absolute;
+  top: 3vw;
+  left: 22vw;  
+  z-index: 5; 
+}
+
+.christmas-tree .triangle:first-child {
+  width: 0;
+  height: 0;
+  border-left: 8vw solid transparent;
+  border-right: 8vw solid transparent;
+  border-bottom: 8vw solid #11CC55;
+  position: absolute;
+  margin-top: 5vw;
+  margin-left: -2vw;
+  z-index: 4; 
+}
+
+.christmas-tree .triangle:nth-child(2) {
+  width: 0;
+  height: 0;
+  border-left: 10vw solid transparent;
+  border-right: 10vw solid transparent;
+  border-bottom: 8vw solid #11BB55;
+  position: absolute;
+  margin-top: 11vw;
+  margin-left: -4vw;
+  z-index: 3; 
+}
+
+.christmas-tree .triangle:nth-child(3) {
+  width: 0;
+  height: 0;
+  border-left: 12.5vw solid transparent;
+  border-right: 12.5vw solid transparent;
+  border-bottom: 8vw solid #11AA55;
+  position: absolute;
+  margin-top: 15vw;
+  margin-left: -6.5vw;
+  z-index: 2; 
+}
+
+.christmas-tree .triangle:last-child {
+  border-bottom: 8vw solid #8B4513;
+  border-left: 1.3vw solid transparent;
+  border-right: 1.3vw solid transparent;
+  height: 0;
+  width: 2.5vw;
+  position: absolute;
+  margin-top: 22vw;
+  margin-left: 3.6vw;
+  z-index: 1; 
+}
+
+.round-it {
+  background: transparent;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;  
+        border-radius: 50%;
+}
+
+/* ------ Christmas tree Decoration -------*/
+.tree-decoration {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  z-index: 6;
+  width: 50vw;
+  height: 50vw;
+  top: -48vw; 
+  left:  21vw;
+}
+
+.tree-decoration .star:first-child {
+  position: absolute;
+  z-index: 7; 
+  display: block;
+  width: 0;
+  height: 0;
+  top: -1vw;
+  left: 5vw;   
+  border-right:  2vw solid transparent;
+  border-bottom: 1.4vw  solid #DAA520;
+  border-left:   2vw solid transparent;
+  -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+     -ms-transform: rotate(35deg);
+      -o-transform: rotate(35deg);
+         transform: rotate(35deg);   
+}
+
+.tree-decoration .star:first-child:before {
+  border-bottom: 1.6vw solid #DAA520;
+  border-left: 0.6vw solid transparent;
+  border-right: 0.6vw solid transparent;
+  position: absolute;
+  z-index: 7; 
+  height: 0;
+  width: 0;
+  top: -1vw;
+  left: -1.1vw;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+     -ms-transform: rotate(-35deg);
+      -o-transform: rotate(-35deg);
+         transform: rotate(-35deg);  
+}
+
+.tree-decoration .star:first-child:after {
+  position: absolute;
+  z-index: 7; 
+  display: block;
+  top: 0;
+  left: -2vw;
+  width: 0;
+  height: 0;
+  border-right: 2vw solid transparent;
+  border-bottom: 1.4vw solid #DAA520;
+  border-left: 2vw solid transparent;
+  -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+     -ms-transform: rotate(-70deg);
+      -o-transform: rotate(-70deg);
+         transform: rotate(-70deg); 
+  content: '';
+}
+
+.tree-decoration .ball:nth-child(2) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #FF1122;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 3.6vw;
+  left: 6.2vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(3) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #2255FF;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 6.2vw;
+  left: 2.8vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(4) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #22FF11;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 6.2vw;
+  left: 9.45vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(5) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #C0C0C0;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 9.5vw;
+  left: 6.2vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(6) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #DAA520;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 11.3vw;
+  left: 1.5vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(7) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #FF1122;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 11.3vw;
+  left: 10.6vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(8) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #2255FF;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 14.5vw;
+  left: 3.8vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(9) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #FDFD22;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 14.5vw;
+  left: 8.7vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(10) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #C0C0C0;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 16.8vw;
+  left: 0.7vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(11) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #DAA520;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 16.8vw;
+  left: 11.7vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(12) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #FF1122;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 19.5vw;
+  left: 2.4vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(13) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #2255FF;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 19.5vw;
+  left: 10.1vw;
+  z-index: 8; 
+}
+
+
+.tree-decoration .ball:nth-child(14) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #FDFD22;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 21.3vw;
+  left: -1.1vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:nth-child(15) {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #C0C0C0;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 22.2vw;
+  left: 6.2vw;
+  z-index: 8; 
+}
+
+.tree-decoration .ball:last-child {
+  width: 1.7vw;
+  height: 1.7vw;  
+  background: #FDFD22;
+  -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;  
+        border-radius: 1vw;
+  position: absolute;
+  top: 21.3vw;
+  left: 13.5vw;
+  z-index: 8; 
+}
+
+
